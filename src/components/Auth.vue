@@ -14,7 +14,8 @@
         px-4
         pb-20
         text-center
-        sm:block sm:p-0
+        sm:block
+        sm:p-0
       "
     >
       <div class="fixed inset-0 transition-opacity">
@@ -37,7 +38,10 @@
           shadow-xl
           transform
           transition-all
-          sm:my-8 sm:align-middle sm:max-w-lg sm:w-full
+          sm:my-8
+          sm:align-middle
+          sm:max-w-lg
+          sm:w-full
         "
       >
         <!-- Add margin if you want to see some of the overlay behind the modal-->
@@ -98,7 +102,8 @@
                   border border-gray-300
                   transition
                   duration-500
-                  focus:outline-none focus:border-black
+                  focus:outline-none
+                  focus:border-black
                   rounded
                 "
                 placeholder="Enter Email"
@@ -118,7 +123,8 @@
                   border border-gray-300
                   transition
                   duration-500
-                  focus:outline-none focus:border-black
+                  focus:outline-none
+                  focus:border-black
                   rounded
                 "
                 placeholder="Password"
@@ -162,7 +168,8 @@
                   border border-gray-300
                   transition
                   duration-500
-                  focus:outline-none focus:border-black
+                  focus:outline-none
+                  focus:border-black
                   rounded
                 "
                 placeholder="Enter Name"
@@ -184,7 +191,8 @@
                   border border-gray-300
                   transition
                   duration-500
-                  focus:outline-none focus:border-black
+                  focus:outline-none
+                  focus:border-black
                   rounded
                 "
                 placeholder="Enter Email"
@@ -206,7 +214,8 @@
                   border border-gray-300
                   transition
                   duration-500
-                  focus:outline-none focus:border-black
+                  focus:outline-none
+                  focus:border-black
                   rounded
                 "
               />
@@ -231,17 +240,16 @@
                     border border-gray-300
                     transition
                     duration-500
-                    focus:outline-none focus:border-black
+                    focus:outline-none
+                    focus:border-black
                     rounded
                   "
                   placeholder="Password"
                   v-bind="field"
                 />
-                <div
-                  class="text-red-600"
-                  v-for="error in errors"
-                  :key="error"
-                ></div>
+                <div class="text-red-600" v-for="error in errors" :key="error">
+                  {{ error }}
+                </div>
               </vee-field>
               <ErrorMessage class="text-red-600" name="password" />
             </div>
@@ -260,7 +268,8 @@
                   border border-gray-300
                   transition
                   duration-500
-                  focus:outline-none focus:border-black
+                  focus:outline-none
+                  focus:border-black
                   rounded
                 "
                 placeholder="Confirm Password"
@@ -282,7 +291,8 @@
                   border border-gray-300
                   transition
                   duration-500
-                  focus:outline-none focus:border-black
+                  focus:outline-none
+                  focus:border-black
                   rounded
                 "
               >
