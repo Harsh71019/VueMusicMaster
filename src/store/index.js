@@ -18,9 +18,8 @@ export default createStore({
   //   authModalShow: (state) => state.authModalShow,
   // },
   actions: {
-    async signout({ commit }) {
+    async signout() {
       await auth.signOut();
-      commit("toggleAuth");
       // if (payload.meta.requiresAuth) {
       //   payload.push({ name: "home" });
       // }
